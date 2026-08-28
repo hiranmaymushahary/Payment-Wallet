@@ -1,1 +1,15 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+
+# Build output
+dist/
+
+# IDE & OS files
+.cursor/
+.DS_Store
+
+# Generated code
+src/generated/
