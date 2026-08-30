@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { IdempotencyUtil } from "../utils/idempotency";
+import { IdempotencyUtil } from "../utils/Idempotency";
 
 
 export function idempotencyMiddleware(req: Request, res: Response, next: NextFunction): void {
