@@ -20,9 +20,9 @@ export class DebitSenderStep implements SagaStep {
   private walletService: WalletService;
   private connectionManager: ConnectionManager;
 
-  constructor(walletService: WalletService, connectionManager: ConnectionManager) {
-    this.walletService = walletService;
-    this.connectionManager = connectionManager;
+  constructor( ) {
+    this.walletService = new WalletService;
+    this.connectionManager = new ConnectionManager;
   }
 
   getName(): string {

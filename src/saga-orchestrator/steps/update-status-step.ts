@@ -9,8 +9,8 @@ import { TransactionStatus } from "../../shared/types/shared-types";
 export class UpdateStatusDebitedStep implements SagaStep {
   private transactionService: TransactionService;
 
-  constructor(transactionService: TransactionService) {
-    this.transactionService = transactionService;
+  constructor() {
+    this.transactionService = new TransactionService;
   }
 
   getName(): string {
@@ -48,8 +48,8 @@ export class UpdateStatusDebitedStep implements SagaStep {
 export class UpdateStatusCreditedStep implements SagaStep {
   private transactionService: TransactionService;
 
-  constructor(transactionService: TransactionService) {
-    this.transactionService = transactionService;
+  constructor() {
+    this.transactionService = new TransactionService;
   }
 
   getName(): string {

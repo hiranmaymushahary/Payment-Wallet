@@ -15,8 +15,8 @@ import { TransactionService } from "../../transaction-service/services/transacti
 export class CreateTransactionStep implements SagaStep {
   private transactionService: TransactionService;
 
-  constructor(transactionService: TransactionService) {
-    this.transactionService = transactionService;
+  constructor() {
+    this.transactionService = new TransactionService;
   }
 
   getName(): string {

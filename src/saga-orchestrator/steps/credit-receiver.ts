@@ -15,8 +15,8 @@ import { connectionManager } from "../../shared/database/connection-manager";
 export class CreditRecevierStep implements SagaStep {
   private walletService: WalletService;
 
-  constructor(walletService: WalletService) {
-    this.walletService = walletService;
+  constructor() {
+    this.walletService = new WalletService;
   }
 
   getName(): string {
