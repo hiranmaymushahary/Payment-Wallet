@@ -14,7 +14,7 @@ import { SagaContext } from "./saga-context";
 
 export interface SagaStep {
 
-  execute(context: SagaContext): Promise<void>;
+  execute(context: SagaContext): Promise<SagaContext>;
 
   compensate(context: SagaContext): Promise<void>;
 
